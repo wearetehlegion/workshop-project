@@ -5,6 +5,8 @@ services:
     build:
       context: .
     container_name: workshopbot-service
+
+
     expose:
       - "${INTERNAL_PORT:-8000}"
     environment:
@@ -28,8 +30,7 @@ services:
       context: ./giphy_service
       dockerfile: Dockerfile
     container_name: giphy-service
-    env_file:
-      - .env
+
     ports:
       - "8001:8001"
     networks:
