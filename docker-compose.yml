@@ -5,8 +5,6 @@ services:
     build:
       context: .
     container_name: workshopbot-service
-    env_file:
-      - .env
     expose:
       - "${INTERNAL_PORT:-8000}"
     environment:
