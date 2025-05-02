@@ -1,0 +1,7 @@
+fastapi
+python-telegram-bot
+psycopg2-binary
+aiohttp
+uvicorn
+python-dotenv
+google-generativeai>=0.4.0
